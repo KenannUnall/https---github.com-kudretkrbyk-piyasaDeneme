@@ -1,3 +1,12 @@
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa";
+
+import { FaMinus } from "react-icons/fa";
+
 import React, { useState } from "react";
 
 const Team = () => {
@@ -62,60 +71,60 @@ const Team = () => {
                     {member.role}
                   </p>
 
-                  <div className="flex justify-between items-center px-4 relative mt-4">
+                  <div className="flex justify-center items-center gap-10 relative">
                     {/* Left */}
-                    <ul className="flex gap-3 opacity-0 group-hover:opacity-100 transform transition duration-300 translate-x-4 group-hover:translate-x-0">
+                    <ul className="flex gap-3 opacity-0 group-hover:opacity-100 transform transition duration-300 translate-x-10 group-hover:translate-x-0">
                       <li>
                         <a
                           href="#"
-                          className="w-8 h-8 bg-[#13182b] rounded-full flex items-center justify-center hover:bg-[#14C2A3] transition"
+                          className="w-8 h-8 bg-[#13182b] rounded-full flex items-center justify-center  transition"
                         >
-                          <i className="fab fa-twitter text-white text-sm" />
+                          <FaSquareXTwitter className="text-white hover:text-[#14C2A3] size-5 transform transition duration-300" />
                         </a>
                       </li>
                       <li>
                         <a
                           href="#"
-                          className="w-8 h-8 bg-[#13182b] rounded-full flex items-center justify-center hover:bg-[#14C2A3] transition"
+                          className="w-8 h-8 bg-[#13182b] rounded-full flex items-center justify-center  transition"
                         >
-                          <i className="fab fa-facebook-f text-white text-sm" />
+                          <FaSquareFacebook className="text-white hover:text-[#14C2A3] size-5 transform transition duration-300" />
                         </a>
                       </li>
                     </ul>
 
                     {/* Toggle Icon */}
                     <span
-                      className={`w-8 h-8 flex items-center justify-center rounded-full bg-[#5423ff] text-white absolute left-1/2 -translate-x-1/2 transition-all duration-300 ${
+                      className={`w-8 h-8  flex items-center justify-center rounded-full   text-white absolute left-1/2 -translate-x-1/2 transition-all  duration-[500ms] ${
                         hovered === index
                           ? "opacity-0 rotate-180"
                           : "opacity-100"
                       }`}
                     >
-                      <i className="far fa-plus" />
+                      <FaPlus />
                     </span>
 
                     {hovered === index && (
-                      <span className="w-8 h-8 flex items-center justify-center rounded-full bg-[#5423ff] text-white absolute left-1/2 -translate-x-1/2 rotate-180 transition-all duration-300">
-                        <i className="far fa-minus" />
+                      <span className="w-8 h-8  flex items-center justify-center text-white absolute left-1/2 -translate-x-1/2  transition-all duration-300">
+                        <FaMinus className="size-5" />
                       </span>
                     )}
 
                     {/* Right */}
-                    <ul className="flex gap-3 opacity-0 group-hover:opacity-100 transform transition duration-300 -translate-x-4 group-hover:translate-x-0">
+                    <ul className="flex gap-3 opacity-0 group-hover:opacity-100 transform transition duration-300 -translate-x-10 group-hover:translate-x-0">
                       <li>
                         <a
                           href="#"
-                          className="w-8 h-8 bg-[#13182b] rounded-full flex items-center justify-center hover:bg-[#14C2A3] transition"
+                          className="w-8 h-8 bg-[#13182b] rounded-full flex items-center justify-center  transition"
                         >
-                          <i className="fab fa-linkedin-in text-white text-sm" />
+                          <FaLinkedin className="text-white hover:text-[#14C2A3] size-5 transform transition duration-300" />
                         </a>
                       </li>
                       <li>
                         <a
                           href="#"
-                          className="w-8 h-8 bg-[#13182b] rounded-full flex items-center justify-center hover:bg-[#14C2A3] transition"
+                          className="w-8 h-8 bg-[#13182b] rounded-full flex items-center justify-center  transition"
                         >
-                          <i className="fab fa-instagram text-white text-sm" />
+                          <FaInstagram className="text-white hover:text-[#14C2A3] size-5 transform transition duration-300" />
                         </a>
                       </li>
                     </ul>
