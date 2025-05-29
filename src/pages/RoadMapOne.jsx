@@ -125,7 +125,7 @@ function RoadMapOne() {
                           <div className="absolute top-1/2 left-1/2 w-[300px] h-[240px] bg-[#19213C] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out group-hover:w-0 overflow-hidden z-10" />
 
                           {/* Üst katman: İçerik */}
-                          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-start justify-center p-4 w-[300px] h-[240px] z-20">
+                          <div className="absolute  flex flex-col items-start justify-center p-4 w-[300px] h-[240px] z-20">
                             <h3 className="text-xl font-bold mb-2 neon-text">
                               {item.time}
                             </h3>
