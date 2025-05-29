@@ -173,14 +173,6 @@ function RoadMapOne() {
               ))}
             </div>
           </div>
-          <style>{`
-        .neon-text {
-          text-shadow: 0 0 8px #14C2A3, 0 0 16px #14C2A3;
-        }
-        .hover\:shadow-neon-glow:hover {
-          box-shadow: 0 0 32px #14C2A3, 0 0 16px #00ffd0;
-        }
-      `}</style>
         </section>
       </section>
     </div>
