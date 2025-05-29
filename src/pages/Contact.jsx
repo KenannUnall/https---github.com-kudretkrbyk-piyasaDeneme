@@ -15,7 +15,7 @@ const Contact = () => {
             >
               <div className="mb-6">
                 <h4 className="text-2xl font-bold uppercase mb-4">
-                  Have a question
+                  Have a questionkk
                 </h4>
                 <p className="text-gray-300 max-w-md">
                   Fill up the Form and our team will get back to you within 24
