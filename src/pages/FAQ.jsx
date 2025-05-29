@@ -3,7 +3,7 @@ import AccordionItem from "../features/faq/accordion-item";
 
 function FAQ() {
   return (
-    <div className="w-full">
+    <div className="w-full font-chakra">
       <section className="tf-section faq bg-st2 p-10 py-24 w-full">
         <div className="container w-full">
           <div className="w-full flex flex-col  ">
