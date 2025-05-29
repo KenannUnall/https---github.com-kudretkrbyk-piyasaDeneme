@@ -66,13 +66,25 @@ function AboutPage() {
               >
                 {data.map((item, index) => (
                   <div
+                    className=" relative group   w-[600px] h-[135px] hover:shadow-[0_0_32px_#14C2A3] hover:shadow-neon-glow transition-all duration-700 "
                     key={index}
-                    className={`p-6 rounded-lg bg-white/5 border border-white/10 hover:border-[#14C2A3] transition-colors ${item.class}`}
                   >
-                    <div className="text-xl font-bold font-chakra text-white mb-3">
-                      {item.title}
+                    {/* Orta katman – hover ile küçülen katman */}
+                    <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full" />
+                    <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full" />
+                    <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full" />
+                    <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full" />
+                    {/* En üst katman – içerik */}
+                    <div
+                      className={`relative z-20 p-6 rounded-lg bg-white/5  transition-colors ${item.class}`}
+                    >
+                      <div className="text-xl font-bold font-chakra text-white mb-3">
+                        {item.title}
+                      </div>
+                      <p className="text-gray-400 leading-relaxed">
+                        {item.desc}
+                      </p>
                     </div>
-                    <p className="text-gray-400 leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
               </div>
