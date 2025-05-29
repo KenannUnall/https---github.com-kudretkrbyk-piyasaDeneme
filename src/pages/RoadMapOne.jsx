@@ -118,7 +118,7 @@ function RoadMapOne() {
                 >
                   {idx % 2 === 0 ? (
                     <>
-                      <div className="w-1/2 flex justify-end pr-8 z-10 group">
+                      <div className="w-1/2 flex justify-end items-center  z-10 group">
                         {/* En alt katman: Border + Glow + Ana kutu */}
                         <div className="relative w-80 h-60 border border-[#14C2A3] bg-[#19213C] transition-all duration-300 hover:border-[#00ffd0] hover:shadow-[0_0_32px_#14C2A3] hover:shadow-neon-glow">
                           {/* Orta katman: Hover ile kapanan animasyonlu overlay */}
@@ -136,6 +136,7 @@ function RoadMapOne() {
                             </ul>
                           </div>
                         </div>
+                        <div className="w-10 h-1 bg-[#14C2A3]"></div>
                       </div>
 
                       {/* Nokta */}
@@ -146,16 +147,24 @@ function RoadMapOne() {
                       <div className="w-1/2"></div>
                       {/* Nokta */}
                       <div className="absolute left-1/2 -translate-x-1/2 w-5 h-5 bg-[#14C2A3]   z-20"></div>
-                      <div className="w-1/2 flex justify-start pl-8 z-10">
-                        <div className="bg-[#19213C] border border-[#14C2A3] rounded-md p-6 w-80 text-white shadow-lg transition-all duration-300 hover:shadow-[0_0_32px_#14C2A3] hover:border-[#00ffd0] hover:shadow-neon-glow">
-                          <h3 className="text-xl font-bold mb-2 neon-text">
-                            {item.time}
-                          </h3>
-                          <ul className="list-disc list-inside text-sm space-y-1">
-                            {item.items.map((text, i) => (
-                              <li key={i}>{text}</li>
-                            ))}
-                          </ul>
+                      <div className="w-1/2 flex justify-start items-center   z-10 group  ">
+                        <div className="w-10 h-1 bg-[#14C2A3]"></div>
+                        {/* En alt katman: Border + Glow + Ana kutu */}
+                        <div className="relative w-80 h-60 border border-[#14C2A3] bg-[#19213C] transition-all duration-300 hover:border-[#00ffd0] hover:shadow-[0_0_32px_#14C2A3] hover:shadow-neon-glow">
+                          {/* Orta katman: Hover ile kapanan animasyonlu overlay */}
+                          <div className="absolute top-1/2 left-1/2 w-[300px] h-[240px] bg-[#19213C] transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out group-hover:w-0 overflow-hidden z-10" />
+
+                          {/* Üst katman: İçerik */}
+                          <div className="absolute  flex flex-col items-start justify-center p-4 w-[300px] h-[240px] z-20">
+                            <h3 className="text-xl font-bold mb-2 neon-text">
+                              {item.time}
+                            </h3>
+                            <ul className="list-disc list-inside text-sm space-y-1">
+                              {item.items.map((text, i) => (
+                                <li key={i}>{text}</li>
+                              ))}
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </>
