@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-
 function Footer() {
   const [isVisible, setIsVisible] = useState(false);
 
