@@ -35,8 +35,8 @@ function AboutPage() {
 
   return (
     <div>
-      <section className="py-20 bg-[#141A31]">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-[#141A31] font-chakra">
+        <div className="container mx-auto px-4 font-chakra">
           <div className="flex flex-col  gap-12 items-center justify-center">
             <div className="lg:w-5/12 ">
               <div
