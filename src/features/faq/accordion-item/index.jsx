@@ -15,7 +15,7 @@ function AccordionItem(props) {
                 className="w-full px-6 py-4 text-left bg-white/5 hover:bg-white/10 transition-colors flex items-center justify-between"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span className="text-lg font-bold text-white">{item.title}</span>
+                <span className="text-lg font-bold font-chakra text-white">{item.title}</span>
                 <svg
                     className={`w-6 h-6 text-[#14C2A3] transition-transform ${isOpen ? 'rotate-180' : ''}`}
                     fill="none"

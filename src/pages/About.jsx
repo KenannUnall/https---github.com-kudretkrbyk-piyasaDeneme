@@ -45,10 +45,10 @@ function AboutPage() {
                 data-aos-duration="800"
               >
                 <div className="w-full">
-                  <p className="text-[#14C2A3] font-bold uppercase tracking-wider text-center">
+                  <p className="text-[#14C2A3] font-bold font-chakra uppercase tracking-wider text-center">
                     {dataBlock.subtitle}
                   </p>
-                  <h4 className="text-3xl md:text-4xl font-bold text-white w-full text-center">
+                  <h4 className="text-3xl md:text-4xl font-bold font-chakra text-white w-full text-center">
                     {dataBlock.title}
                   </h4>
                 </div>
@@ -64,11 +64,12 @@ function AboutPage() {
                 data-aos="fade-up"
                 data-aos-duration="800"
               >
-                {data.map((item) => (
+                {data.map((item, index) => (
                   <div
+                    key={index}
                     className={`p-6 rounded-lg bg-white/5 border border-white/10 hover:border-[#14C2A3] transition-colors ${item.class}`}
                   >
-                    <div className="text-xl font-bold text-white mb-3">
+                    <div className="text-xl font-bold font-chakra text-white mb-3">
                       {item.title}
                     </div>
                     <p className="text-gray-400 leading-relaxed">{item.desc}</p>

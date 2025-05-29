@@ -19,8 +19,8 @@ function FAQ(props) {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
                     <div className="space-y-4">
-                        <p className="text-[#14C2A3] font-bold uppercase tracking-wider">{dataBlock.subtitle}</p>
-                        <h4 className="text-3xl md:text-4xl font-bold text-white">{dataBlock.title}</h4>
+                        <p className="text-[#14C2A3] font-bold font-chakra uppercase tracking-wider">{dataBlock.subtitle}</p>
+                        <h4 className="text-3xl md:text-4xl font-bold font-chakra text-white">{dataBlock.title}</h4>
                     </div>
                 </div>
 

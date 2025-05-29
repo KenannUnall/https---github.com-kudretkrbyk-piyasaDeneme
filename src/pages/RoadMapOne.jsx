@@ -92,7 +92,7 @@ function RoadMapOne() {
     },
   ];
   return (
-    <div className="bg-[#0c1226] min-h-screen text-white font-figtree">
+    <div className="bg-[#0c1226] min-h-screen text-white font-chakra">
       {/* Page Title Section */}
       <section className="relative py-28 text-center bg-[#141A31]">
         <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-wider text-white">

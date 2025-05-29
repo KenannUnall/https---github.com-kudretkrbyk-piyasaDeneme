@@ -58,7 +58,7 @@ function Footer() {
           </ul>
 
           <div className="text-center mb-8">
-            <h5 className="text-2xl font-bold mb-4">
+            <h5 className="text-2xl font-bold font-chakra mb-4">
               don't miss out, join now for early access
             </h5>
             <p className="text-gray-400 mb-6">
@@ -74,7 +74,7 @@ function Footer() {
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-[#14C2A3] text-white font-bold rounded-lg hover:bg-[#0fa890] transition-colors"
+                className="px-8 py-3 bg-[#14C2A3] text-white font-bold font-chakra rounded-lg hover:bg-[#0fa890] transition-colors"
               >
                 Subscribe
               </button>

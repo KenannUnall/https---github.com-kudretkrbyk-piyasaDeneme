@@ -39,10 +39,10 @@ const Team = () => {
     <section className="relative pt-[130px] bg-[#0f1928]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h5 className="text-[#14C2A3] uppercase font-bold tracking-wide mb-2">
+          <h5 className="text-[#14C2A3] uppercase font-bold font-chakra tracking-wide mb-2">
             Our Team
           </h5>
-          <h2 className="text-white text-3xl md:text-4xl font-bold">
+          <h2 className="text-white text-3xl md:text-4xl font-bold font-chakra">
             Meet our skilled team
           </h2>
         </div>
@@ -64,10 +64,10 @@ const Team = () => {
                     alt={member.name}
                     className="w-40 h-40 rounded-full mx-auto object-cover mb-6"
                   />
-                  <h3 className="text-white text-lg font-semibold mb-1">
+                  <h3 className="text-white text-lg font-semibold font-chakra mb-1">
                     {member.name}
                   </h3>
-                  <p className="text-[#b3b3c0] text-sm mb-6 font-medium">
+                  <p className="text-[#b3b3c0] text-sm mb-6 font-medium font-chakra">
                     {member.role}
                   </p>
 

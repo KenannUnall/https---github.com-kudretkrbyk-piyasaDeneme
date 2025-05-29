@@ -10,7 +10,7 @@ import Team from "./pages/Team";
 
 import Project from "./pages/project";
 import Partner from "./pages/Partner";
-import FAQ from "./pages/faq";
+import FAQ from "./pages/FAQ";
 import Page404 from "./pages/404";
 import RoadMapOne from "./pages/RoadMapOne";
 

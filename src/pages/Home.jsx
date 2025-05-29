@@ -1,4 +1,4 @@
-import FAQ from "../features/faq";
+import FAQ from "../pages/FAQ";
 import Partner from "../pages/Partner";
 import Project from "../features/project";
 import Team from "./Team";

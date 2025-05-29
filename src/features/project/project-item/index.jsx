@@ -15,7 +15,7 @@ function ProjectItem(props) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <Link
                     to="/nft-item"
-                    className="w-full p-4 text-white font-bold text-lg hover:text-[#14C2A3] transition-colors"
+                    className="w-full p-4 text-white font-bold font-chakra text-lg hover:text-[#14C2A3] transition-colors"
                 >
                     {item.title}
                 </Link>

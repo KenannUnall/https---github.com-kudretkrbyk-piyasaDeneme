@@ -6,7 +6,7 @@ function Button({ title, path, onClick }) {
     <Link
       to={path}
       onClick={onClick}
-      className="relative inline-block px-8 py-3 uppercase font-bold text-white font-figtree tracking-wider overflow-hidden group border-2 border-[#14C2A3] hover:text-white"
+      className="relative inline-block px-8 py-3 uppercase font-bold text-white font-chakra tracking-wider overflow-hidden group border-2 border-[#14C2A3] hover:text-white"
     >
       {/* Border overlay */}
       <span className="absolute inset-0 transition-all duration-300 bg-transparent group-hover:bg-[#14C2A3] z-0"></span>

@@ -91,10 +91,10 @@ function PartnerPage() {
         data-aos-duration="800"
       >
         <div className="space-y-4">
-          <p className="text-[#14C2A3] font-bold uppercase tracking-wider">
+          <p className="text-[#14C2A3] font-bold font-chakra uppercase tracking-wider">
             Partners
           </p>
-          <h4 className="text-3xl md:text-4xl font-bold text-white">
+          <h4 className="text-3xl md:text-4xl font-bold font-chakra text-white">
             Our Partners
           </h4>
         </div>

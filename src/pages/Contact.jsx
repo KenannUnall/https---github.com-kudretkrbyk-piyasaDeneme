@@ -4,7 +4,7 @@ import PageTitle from "../components/pagetitle";
 const Contact = () => {
   return (
     <div>
-      <section className="py-20 bg-[#0c1226] text-white font-figtree">
+      <section className="py-20 bg-[#0c1226] text-white font-chakra">
         <div className="container mx-auto px-4">
           <div className="flex flex-col xl:flex-row gap-12">
             {/* Contact Form */}

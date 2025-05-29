@@ -58,7 +58,7 @@ const Header = () => {
               >
                 <Link
                   to={data.links}
-                  className={`relative uppercase text-white font-bold text-sm transition duration-300 hover:text-[#14C2A3] hover:drop-shadow-[0_0_6px_#14C2A3] ${
+                  className={`relative uppercase text-white font-bold font-chakra text-sm transition duration-300 hover:text-[#14C2A3] hover:drop-shadow-[0_0_6px_#14C2A3] ${
                     activeIndex === idx ? "text-[#14C2A3]" : ""
                   }`}
                 >
@@ -71,7 +71,7 @@ const Header = () => {
                       <li key={submenu.id}>
                         <NavLink
                           to={submenu.links}
-                          className="block px-5 py-3 font-bold uppercase text-sm hover:bg-[#14C2A3] hover:text-white"
+                          className="block px-5 py-3 font-bold font-chakra uppercase text-sm hover:bg-[#14C2A3] hover:text-white"
                         >
                           {submenu.sub}
                         </NavLink>
@@ -127,7 +127,7 @@ const Header = () => {
             >
               <Link
                 to={data.links}
-                className="uppercase text-white font-bold text-sm block pb-2 border-b border-white/10"
+                className="uppercase text-white font-bold font-chakra text-sm block pb-2 border-b border-white/10"
               >
                 {data.name}
               </Link>
