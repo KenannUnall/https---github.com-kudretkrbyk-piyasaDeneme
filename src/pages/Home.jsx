@@ -1,8 +1,8 @@
-import FAQ from "../../features/faq";
-import Partner from "../../features/partner";
-import Project from "../../features/project";
-import Team from "../../pages/team";
-import RoadMapOne from "../RoadMapOne";
+import FAQ from "../features/faq";
+import Partner from "../pages/Partner";
+import Project from "../features/project";
+import Team from "./Team";
+import RoadMapOne from "./RoadMapOne";
 
 function Home() {
   const faqData = [

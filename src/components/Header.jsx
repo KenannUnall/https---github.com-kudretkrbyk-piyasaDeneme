@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo/logo.png";
-import Button from "../button";
+import logo from "../assets/images/logo/logo.png";
+import Button from "./button";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
     { name: "Ekibimiz", links: "/team" },
     { name: "Blog", links: "/blog" },
     { name: "SSS", links: "/faq" },
-    { name: "İletişim", links: "/contact" }
+    { name: "İletişim", links: "/contact" },
   ];
 
   return (

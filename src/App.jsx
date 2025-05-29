@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Home from "./pages/home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 import About from "./pages/About";
 
 import Contact from "./pages/contact";
-import Team from "./pages/team";
+import Team from "./pages/Team";
 
 import Project from "./pages/project";
-import Partner from "./pages/partner";
+import Partner from "./pages/Partner";
 import FAQ from "./pages/faq";
 import Page404 from "./pages/404";
 import RoadMapOne from "./pages/RoadMapOne";
