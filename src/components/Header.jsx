@@ -137,7 +137,7 @@ const Header = () => {
                     <li key={submenu.id}>
                       <NavLink
                         to={submenu.links}
-                        className="block py-2 pl-4 border-t border-white/10 text-white hover:text-[#14C2A3]"
+                        className="block py-2 pl-4 border-t border-white/10 text-whit hover:text-[#14C2A3]"
                       >
                         {submenu.sub}
                       </NavLink>
