@@ -36,14 +36,14 @@ function AboutPage() {
   return (
     <div className=" relative">
       <img
-        className="absolute w-full left-0 right-0 top-1/3 "
+        className="absolute w-full left-0 right-0 top-1/ "
         src="/images/team_bg.png"
       ></img>
 
       <section className="py-20 bg-[#141A31] font-chakra">
         <div className="container mx-auto px-4 font-chakra">
-          <div className="flex flex-col  gap-12 items-center justify-center">
-            <div className="lg:w-5/12 ">
+          <div className="flex flex-col  gap-12 items-center justify-center w-full">
+            <div className="lg:w-1/3  ">
               <div
                 className=" flex flex-col items-center justify-center gap-4 text-center lg:text-left"
                 data-aos="fade-up"
@@ -63,7 +63,7 @@ function AboutPage() {
                 <Button title="get Nfts" path="/" />
               </div>
             </div>
-            <div className="lg:w-7/12">
+            <div className="w-full">
               <div
                 className="flex flex-col item-center justify-center gap-6 lg:gap-8 lg:flex-row flex-wrap"
                 data-aos="fade-up"
@@ -71,7 +71,7 @@ function AboutPage() {
               >
                 {data.map((item, index) => (
                   <div
-                    className=" relative group   w-[600px] h-[135px] hover:shadow-[0_0_32px_#14C2A3] hover:shadow-neon-glow transition-all duration-700 "
+                    className=" relative group   md:w-[600px]  hover:shadow-[0_0_32px_#14C2A3] hover:shadow-neon-glow transition-all duration-700 "
                     key={index}
                   >
                     {/* Orta katman – hover ile küçülen katman */}
