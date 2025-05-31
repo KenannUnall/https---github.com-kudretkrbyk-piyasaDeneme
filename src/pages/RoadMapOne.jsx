@@ -94,16 +94,16 @@ function RoadMapOne() {
   return (
     <div className="bg-[#0c1226] min-h-screen text-white font-chakra">
       {/* Page Title Section */}
-      <section className="relative py-28 text-center bg-[#141A31]">
+      <section className="relative py-14 text-center bg-[#141A31] group">
         <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-wider text-white">
           Roadmap
         </h1>
-        <div className="mt-4 w-24 h-1 bg-[#14C2A3] mx-auto"></div>
+        <div className="mt-4 w-24 h-1 group-hover:w-48 duration-500 bg-[#14C2A3] mx-auto"></div>
       </section>
 
       {/* Roadmap Section */}
-      <section className="py-20 px-4 max-w-7xl mx-auto">
-        <section className="relative py-20 bg-[#141A31] overflow-hidden">
+      <section className="py-10 px-4 max-w-7xl mx-auto">
+        <section className="relative py-10 bg-[#141A31] overflow-hidden">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12 tracking-widest">
             CYBOX TIMELINE
           </h2>
