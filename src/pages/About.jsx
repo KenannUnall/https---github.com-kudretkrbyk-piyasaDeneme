@@ -36,7 +36,7 @@ function AboutPage() {
   return (
     <div className=" relative">
       <img
-        className="absolute w-full left-0 right-0 top-1/ "
+        className="absolute w-full left-0 right-0 top-1/3 "
         src="/images/team_bg.png"
       ></img>
 
