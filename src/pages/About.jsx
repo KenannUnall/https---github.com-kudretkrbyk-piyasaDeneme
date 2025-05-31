@@ -34,7 +34,12 @@ function AboutPage() {
   ];
 
   return (
-    <div>
+    <div className=" relative">
+      <img
+        className="absolute w-full left-0 right-0 top-1/3 "
+        src="/images/team_bg.png"
+      ></img>
+
       <section className="py-20 bg-[#141A31] font-chakra">
         <div className="container mx-auto px-4 font-chakra">
           <div className="flex flex-col  gap-12 items-center justify-center">

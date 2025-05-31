@@ -30,12 +30,13 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full top-0 left-0 z-[1000] transition-all duration-500 ${
+      className={`relative w-full top-0 left-0 z-[1000] transition-all duration-500 ${
         scroll
           ? "fixed bg-[#141A31] shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
           : "absolute bg-transparent"
       } h-[108px] lg:h-[90px]`}
     >
+      <img className="absolute w-full h-24" src="/images/bg.png"></img>
       <div className="container mx-auto px-4 h-full flex items-center relative justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
