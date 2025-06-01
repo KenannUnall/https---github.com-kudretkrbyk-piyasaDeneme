@@ -29,8 +29,8 @@ function Footer() {
   }, []);
 
   return (
-    <footer className="relative bg-[#141A31] text-white">
-      <div className="relative">
+    <footer className=" bottom-0 w-full bg-[#141A31] text-white">
+      {/* <div className="relative">
         <img
           src="/images/bg.png"
           alt=""
@@ -80,10 +80,15 @@ function Footer() {
             </form>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 py-6">
+      <div className="border-t border-white/10 relative">
+        <img
+          src="/images/bg.png"
+          alt=""
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-90 "
+        />
+        <div className="container mx-auto px-4 py-6 z-10 relative">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <div className="text-gray-400">
               <p>CYBOX 2022- ALL rights reserved</p>

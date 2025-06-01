@@ -18,7 +18,7 @@ function Button({ title, path, onClick }) {
       <span className="absolute top-1/2 right-0 w-[2px] h-0 bg-white transition-all duration-300 group-hover:h-full group-hover:top-0"></span>
 
       {/* Text layer */}
-      <span className="relative z-10">{title}</span>
+      <span className="relative z-10 text-nowrap">{title}</span>
     </Link>
   );
 }

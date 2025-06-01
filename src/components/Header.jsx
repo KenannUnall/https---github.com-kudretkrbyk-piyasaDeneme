@@ -74,9 +74,7 @@ const Header = () => {
             {menus.map((data, idx) => (
               <li
                 key={idx}
-                className={`relative group ${
-                  data.namesub ? "has-children" : ""
-                }`}
+                className={`relative group text-nowrap `}
                 onMouseEnter={() => setActiveIndex(idx)}
                 onMouseLeave={() => setActiveIndex(null)}
               >
@@ -89,20 +87,6 @@ const Header = () => {
                   {data.name}
                   {data.namesub && <span className="ml-1 text-xs">▼</span>}
                 </Link>
-                {data.namesub && (
-                  <ul className="absolute left-1/2 -translate-x-1/2 top-full mt-4 bg-white text-black w-56 shadow-[0_0_20px_#14C2A3] rounded-md opacity-0 group-hover:opacity-100 transform scale-95 group-hover:scale-100 transition-all duration-300 z-50">
-                    {data.namesub.map((submenu) => (
-                      <li key={submenu.id}>
-                        <NavLink
-                          to={submenu.links}
-                          className="block px-5 py-3 font-bold font-chakra uppercase text-sm hover:bg-[#14C2A3] hover:text-white transition-colors duration-300"
-                        >
-                          {submenu.sub}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
-                )}
               </li>
             ))}
           </ul>
