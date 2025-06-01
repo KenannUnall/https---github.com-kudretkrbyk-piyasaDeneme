@@ -7,12 +7,33 @@ const Header = () => {
   const [scroll, setScroll] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    const handleScroll = () => setScroll(window.scrollY > 300);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Scroll pozisyonunu kontrol et
+      if (currentScrollY > 300) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+
+      // Header'ın görünürlüğünü kontrol et
+      if (currentScrollY > lastScrollY && currentScrollY > 300) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   const handleMenuToggle = () => setMenuActive(!menuActive);
   const handleDropdown = (index) => setActiveIndex(index);
@@ -30,16 +51,18 @@ const Header = () => {
 
   return (
     <header
-      className={`relative w-full top-0 left-0 z-[1000] transition-all duration-500 ${
+      className={`fixed w-full top-0 left-0 z-[1000] transition-all duration-500 ${
         scroll
-          ? "fixed bg-[#141A31] shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
-          : "absolute bg-transparent"
-      } h-[108px] lg:h-[90px]`}
+          ? "bg-[#141A31] shadow-[0_4px_8px_rgba(0,0,0,0.1)]"
+          : "bg-transparent"
+      } h-[108px] lg:h-[90px] transform transition-transform duration-500 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
     >
       <img className="absolute w-full h-24" src="/images/bg.png"></img>
       <div className="container mx-auto px-4 h-full flex items-center relative justify-between">
         {/* Logo */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 transform transition-transform duration-300 hover:scale-105">
           <NavLink to="/">
             <img src={logo} alt="Crybox" className="h-10" />
           </NavLink>
@@ -59,7 +82,7 @@ const Header = () => {
               >
                 <Link
                   to={data.links}
-                  className={`relative uppercase text-white font-bold font-chakra text-sm transition duration-300 hover:text-[#14C2A3] hover:drop-shadow-[0_0_6px_#14C2A3] ${
+                  className={`relative uppercase text-white font-bold font-chakra text-sm transition-all duration-300 hover:text-[#14C2A3] hover:drop-shadow-[0_0_6px_#14C2A3] ${
                     activeIndex === idx ? "text-[#14C2A3]" : ""
                   }`}
                 >
@@ -72,7 +95,7 @@ const Header = () => {
                       <li key={submenu.id}>
                         <NavLink
                           to={submenu.links}
-                          className="block px-5 py-3 font-bold font-chakra uppercase text-sm hover:bg-[#14C2A3] hover:text-white"
+                          className="block px-5 py-3 font-bold font-chakra uppercase text-sm hover:bg-[#14C2A3] hover:text-white transition-colors duration-300"
                         >
                           {submenu.sub}
                         </NavLink>
@@ -86,7 +109,7 @@ const Header = () => {
         </nav>
 
         {/* Call to action button */}
-        <div className="hidden lg:block ml-auto">
+        <div className="hidden lg:block ml-auto transform transition-transform duration-300 hover:scale-105">
           <Button title="JOIN DISCORD" path="/contact" />
         </div>
 
@@ -96,17 +119,17 @@ const Header = () => {
           onClick={handleMenuToggle}
         >
           <span
-            className={`block w-full h-[3px] bg-white absolute top-1/2 transition-transform duration-300 ${
+            className={`block w-full h-[3px] bg-white absolute top-1/2 transition-all duration-300 ${
               menuActive ? "rotate-45" : "-translate-y-2"
             }`}
           ></span>
           <span
-            className={`block w-full h-[3px] bg-white absolute top-1/2 transition-opacity duration-300 ${
+            className={`block w-full h-[3px] bg-white absolute top-1/2 transition-all duration-300 ${
               menuActive ? "opacity-0" : "opacity-100"
             }`}
           ></span>
           <span
-            className={`block w-full h-[3px] bg-white absolute top-1/2 transition-transform duration-300 ${
+            className={`block w-full h-[3px] bg-white absolute top-1/2 transition-all duration-300 ${
               menuActive ? "-rotate-45" : "translate-y-2"
             }`}
           ></span>
@@ -115,7 +138,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed top-0 left-0 w-3/5 sm:w-3/4 h-screen bg-[#100D1E] transition-transform duration-500 z-[999] ${
+        className={`lg:hidden fixed top-0 left-0 w-3/5 sm:w-3/4 h-screen bg-[#100D1E] transition-all duration-500 z-[999] ${
           menuActive ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -128,7 +151,7 @@ const Header = () => {
             >
               <Link
                 to={data.links}
-                className="uppercase text-white font-bold font-chakra text-sm block pb-2 border-b border-white/10"
+                className="uppercase text-white font-bold font-chakra text-sm block pb-2 border-b border-white/10 transition-colors duration-300 hover:text-[#14C2A3]"
               >
                 {data.name}
               </Link>
@@ -138,7 +161,7 @@ const Header = () => {
                     <li key={submenu.id}>
                       <NavLink
                         to={submenu.links}
-                        className="block py-2 pl-4 border-t border-white/10 text-white hover:text-[#14C2A3]"
+                        className="block py-2 pl-4 border-t border-white/10 text-white hover:text-[#14C2A3] transition-colors duration-300"
                       >
                         {submenu.sub}
                       </NavLink>

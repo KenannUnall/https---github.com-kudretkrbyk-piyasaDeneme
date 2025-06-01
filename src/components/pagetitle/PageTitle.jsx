@@ -5,7 +5,7 @@ function PageTitle(props) {
   const { title } = props;
 
   return (
-    <section className="py-14 text-center bg-[#141A31] group">
+    <section className="pt-24 py-4 text-center bg-[#141A31] group">
       <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-wider text-white">
         {title}
       </h1>
