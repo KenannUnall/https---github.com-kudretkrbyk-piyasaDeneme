@@ -93,23 +93,10 @@ function RoadMapOne() {
   ];
   return (
     <div className="bg-[#0c1226] min-h-screen w-full text-white font-chakra relative overflow-visible">
-      {/* Sağ görsel ????*/}
-      <img
-        className="absolute right-0 top-60 z-50   pointer-events-none"
-        src="/images/coinBg.png"
-        alt="coin-right"
-      />
-
-      {/* Sol görsel */}
-      <img
-        className="absolute left-0 top-96 z-50 w-32  pointer-events-none"
-        src="/images/coinBg.png"
-        alt="coin-left"
-      />
       {/* Page Title Section */}
       <section className="relative py-14 text-center bg-[#141A31] group">
         <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-wider text-white">
-          Roadmap
+          Yol haritası
         </h1>
         <div className="mt-4 w-24 h-1 group-hover:w-48 duration-500 bg-[#14C2A3] mx-auto"></div>
       </section>

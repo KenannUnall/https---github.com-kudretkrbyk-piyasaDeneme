@@ -4,6 +4,10 @@ import PageTitle from "../components/pagetitle";
 const Contact = () => {
   return (
     <div>
+      <img
+        className="absolute w-full left-0 right-0 top-1/3 "
+        src="/images/team_bg.png"
+      ></img>
       <section className="py-20 bg-[#0c1226] text-white font-chakra">
         <div className="container mx-auto px-4">
           <div className="flex flex-col xl:flex-row gap-12">
