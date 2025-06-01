@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaArrowCircleUp } from "react-icons/fa";
+
 function Footer() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -134,22 +136,9 @@ function Footer() {
       {isVisible && (
         <Link
           onClick={scrollToTop}
-          to="#"
-          className="fixed bottom-8 right-8 w-12 h-12 bg-[#14C2A3] rounded-full flex items-center justify-center hover:bg-[#0fa890] transition-colors"
+          className="fixed bottom-20 right-8  group  "
         >
-          <svg
-            className="w-6 h-6 text-white"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M5 10l7-7m0 0l7 7m-7-7v18"
-            />
-          </svg>
+          <FaArrowCircleUp className="size-10 text-[#14C2A3] group-hover:text-[#0fa890] transition-colors" />
         </Link>
       )}
     </footer>
