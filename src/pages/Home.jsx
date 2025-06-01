@@ -1,10 +1,12 @@
+import React from "react";
 import FAQ from "../pages/FAQ";
 import Partner from "../pages/Partner";
 import Project from "../features/project";
 import Team from "./Team";
 import RoadMapOne from "./RoadMapOne";
+import Hero from "../components/Hero";
 
-function Home() {
+const Home = () => {
   const faqData = [
     {
       id: 1,
@@ -227,7 +229,8 @@ function Home() {
   ];
 
   return (
-    <div>
+    <div className="min-h-screen bg-[#0c1226]">
+      <Hero />
       <Project data={projectData} />
       <RoadMapOne />
       <Team data={teamData} />
@@ -236,6 +239,6 @@ function Home() {
       <Partner data={partnerData} />
     </div>
   );
-}
+};
 
 export default Home;
