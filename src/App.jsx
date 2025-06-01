@@ -13,11 +13,13 @@ import Partner from "./pages/Partner";
 import FAQ from "./pages/FAQ";
 import Page404 from "./pages/404";
 import RoadMapOne from "./pages/RoadMapOne";
+import WarningModal from "./components/WarningModal";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-[#141A31]">
+        <WarningModal />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

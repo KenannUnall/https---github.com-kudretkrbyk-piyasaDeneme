@@ -1,3 +1,5 @@
+import PageTitle from "../components/pagetitle/PageTitle";
+
 function RoadMapOne() {
   const roadmapData = [
     {
@@ -94,12 +96,8 @@ function RoadMapOne() {
   return (
     <div className="bg-[#0c1226] min-h-screen w-full text-white font-chakra relative overflow-visible">
       {/* Page Title Section */}
-      <section className="relative py-14 text-center bg-[#141A31] group">
-        <h1 className="text-5xl md:text-6xl font-bold uppercase tracking-wider text-white">
-          Yol haritası
-        </h1>
-        <div className="mt-4 w-24 h-1 group-hover:w-48 duration-500 bg-[#14C2A3] mx-auto"></div>
-      </section>
+      <PageTitle title="Yol Haritası" />
+
       {/* Roadmap Section */}
       <section className="py-10 px-4 max-w-7xl mx-auto">
         <section className="relative py-10 bg-[#141A31] overflow-hidden">

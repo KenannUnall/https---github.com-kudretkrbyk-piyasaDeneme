@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../components/button";
+import PageTitle from "../components/pagetitle/PageTitle";
 function AboutPage() {
   const [dataBlock] = useState({
     subtitle: "About us",
@@ -35,6 +36,7 @@ function AboutPage() {
 
   return (
     <div className=" relative">
+      <PageTitle title="Hakkımızda" />
       <img
         className="absolute w-full left-0 right-0 top-1/3 "
         src="/images/team_bg.png"

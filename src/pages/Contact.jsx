@@ -1,9 +1,10 @@
 import React from "react";
-import PageTitle from "../components/pagetitle";
+import PageTitle from "../components/pagetitle/PageTitle";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="font-chakra">
+      <PageTitle title="İletişim" />
       <img
         className="absolute w-full left-0 right-0 top-1/3 "
         src="/images/team_bg.png"
