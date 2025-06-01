@@ -37,7 +37,7 @@ const Header = () => {
 
   const handleMenuToggle = () => setMenuActive(!menuActive);
   const handleDropdown = (index) => setActiveIndex(index);
-
+  const handleMobileMenuClose = () => setMenuActive(false);
   const menus = [
     { name: "Ana Sayfa", links: "/" },
     { name: "Hakkımızda", links: "/about" },
@@ -134,6 +134,7 @@ const Header = () => {
               onClick={() => handleDropdown(idx)}
             >
               <Link
+                onClick={handleMobileMenuClose}
                 to={data.links}
                 className="uppercase text-white font-bold font-chakra text-sm block pb-2 border-b border-white/10 transition-colors duration-300 hover:text-[#14C2A3]"
               >

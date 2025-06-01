@@ -31,7 +31,7 @@ function Footer() {
   }, []);
 
   return (
-    <footer className=" bottom-0 w-full bg-[#141A31] text-white">
+    <footer className=" bottom-0 w-full bg-[#141A31] text-white z-50">
       {/* <div className="relative">
         <img
           src="/images/bg.png"
@@ -136,7 +136,7 @@ function Footer() {
       {isVisible && (
         <Link
           onClick={scrollToTop}
-          className="fixed bottom-20 right-8  group  "
+          className="fixed bottom-40 md:bottom-20 right-2 md:right-8  group z-50  "
         >
           <FaArrowCircleUp className="size-10 text-[#14C2A3] group-hover:text-[#0fa890] transition-colors" />
         </Link>
