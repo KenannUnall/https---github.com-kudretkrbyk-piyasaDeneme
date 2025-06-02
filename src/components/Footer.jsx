@@ -31,7 +31,7 @@ function Footer() {
   }, []);
 
   return (
-    <footer className=" bottom-0 w-full bg-[#141A31] text-white z-50">
+    <footer className=" w-full bg-[#141A31] text-white z-50">
       {/* <div className="relative">
         <img
           src="/images/bg.png"

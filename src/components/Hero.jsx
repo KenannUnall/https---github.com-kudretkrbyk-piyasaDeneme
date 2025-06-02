@@ -4,7 +4,7 @@ import Button from "./button";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-[#0c1226] p-5 md:p-20">
+    <div className="relative min-h-screen w-full overflow-hidden bg-[#0c1226] p-5 md:p-20 font-chakra">
       {/* Arka plan animasyonlu gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0c1226] via-[#141A31] to-[#0c1226]">
         <div className="absolute inset-0 bg-[url('/images/uo_bg.png')] opacity-10"></div>
@@ -12,7 +12,7 @@ const Hero = () => {
       </div>
 
       {/* Ana içerik */}
-      <div className="relative container  px-4 h-screen flex items-center  ">
+      <div className="relative container  px-4  flex items-center  ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Sol taraf - Metin içeriği */}
           <div className="text-center lg:text-left">

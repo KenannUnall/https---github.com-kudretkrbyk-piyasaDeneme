@@ -40,7 +40,7 @@ function RoadMapOne() {
     },
   ];
   return (
-    <div className="bg-[#0c1226] min-h-screen w-full text-white font-chakra relative overflow-visible">
+    <div className="bg-[#0c1226] min-h-screen w-full text-white font-chakra relative overflow-hidden ">
       {/* Page Title Section */}
       <PageTitle title="Yol Haritası" />
 

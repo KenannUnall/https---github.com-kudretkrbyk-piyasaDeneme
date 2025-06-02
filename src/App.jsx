@@ -18,10 +18,10 @@ import WarningModal from "./components/WarningModal";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-[#141A31]">
+      <div className="min-h-screen flex flex-col bg-[#141A31]">
         <WarningModal />
         <Header />
-        <div className="pt-[100px] lg:pt-[90px]">
+        <div className="pt-[90px] flex-grow ">
           {" "}
           <Routes>
             <Route path="/" element={<Home />} />
