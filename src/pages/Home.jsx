@@ -1,7 +1,7 @@
 import React from "react";
 import FAQ from "../pages/FAQ";
 import Partner from "../pages/Partner";
-import Project from "../features/project";
+import CoinsSlider from "../components/CoinsSlider";
 import Team from "./Team";
 import RoadMapOne from "./RoadMapOne";
 import Hero from "../components/Hero";
@@ -116,44 +116,44 @@ const Home = () => {
   const projectData = [
     {
       id: 1,
-      img: "/assets/images/portfolio/1.jpg",
-      title: "NFT Marketplace",
+      img: "/images/binance.png",
+      title: "Binance ",
     },
     {
       id: 2,
-      img: "/assets/images/portfolio/2.jpg",
-      title: "NFT Marketplace",
+      img: "/images/cardano.png",
+      title: "Cardano",
     },
     {
       id: 3,
-      img: "/assets/images/portfolio/3.jpg",
-      title: "NFT Marketplace",
+      img: "images/bitcoin.png",
+      title: "Bitcoin",
     },
     {
       id: 4,
-      img: "/assets/images/portfolio/4.jpg",
-      title: "NFT Marketplace",
+      img: "images/ethereum.png",
+      title: "Ethereum",
     },
-    {
-      id: 5,
-      img: "/assets/images/portfolio/5.jpg",
-      title: "NFT Marketplace",
-    },
-    {
-      id: 6,
-      img: "/assets/images/portfolio/6.jpg",
-      title: "NFT Marketplace",
-    },
-    {
-      id: 7,
-      img: "/assets/images/portfolio/7.jpg",
-      title: "NFT Marketplace",
-    },
-    {
-      id: 8,
-      img: "/assets/images/portfolio/8.jpg",
-      title: "NFT Marketplace",
-    },
+    // {
+    //   id: 5,
+    //   img: "/assets/images/portfolio/5.jpg",
+    //   title: "NFT Marketplace",
+    // },
+    // {
+    //   id: 6,
+    //   img: "/assets/images/portfolio/6.jpg",
+    //   title: "NFT Marketplace",
+    // },
+    // {
+    //   id: 7,
+    //   img: "/assets/images/portfolio/7.jpg",
+    //   title: "NFT Marketplace",
+    // },
+    // {
+    //   id: 8,
+    //   img: "/assets/images/portfolio/8.jpg",
+    //   title: "NFT Marketplace",
+    // },
   ];
 
   const teamData = [
@@ -231,7 +231,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-[#0c1226]">
       <Hero />
-      <Project data={projectData} />
+      <CoinsSlider data={projectData} />
       <RoadMapOne />
       <Team data={teamData} />
 
