@@ -38,60 +38,6 @@ function RoadMapOne() {
         "Risus eu metus",
       ],
     },
-    {
-      time: "Q2 2022",
-      items: [
-        "Aenean tempor",
-        "Fusce arcu maecenas",
-        "Malesuada felis sem elementum",
-        "Risus eu metus",
-      ],
-    },
-    {
-      time: "Q1 2022",
-      items: [
-        "Aenean tempor",
-        "Fusce arcu maecenas",
-        "Malesuada felis sem elementum",
-        "Risus eu metus",
-      ],
-    },
-    {
-      time: "Q4 2022",
-      items: [
-        "Aenean tempor",
-        "Fusce arcu maecenas",
-        "Malesuada felis sem elementum",
-        "Risus eu metus",
-      ],
-    },
-    {
-      time: "Q3 2022",
-      items: [
-        "Aenean tempor",
-        "Fusce arcu maecenas",
-        "Malesuada felis sem elementum",
-        "Risus eu metus",
-      ],
-    },
-    {
-      time: "Q2 2022",
-      items: [
-        "Aenean tempor",
-        "Fusce arcu maecenas",
-        "Malesuada felis sem elementum",
-        "Risus eu metus",
-      ],
-    },
-    {
-      time: "Q1 2022",
-      items: [
-        "kdrt tempor",
-        "Fusce arcu maecenas",
-        "Malesuada felis sem elementum",
-        "Risus eu metus",
-      ],
-    },
   ];
   return (
     <div className="bg-[#0c1226] min-h-screen w-full text-white font-chakra relative overflow-visible">
@@ -100,7 +46,11 @@ function RoadMapOne() {
 
       {/* Roadmap Section */}
       <section className="py-10 px-4 max-w-7xl mx-auto">
-        <section className="relative py-10 bg-[#141A31] overflow-hidden">
+        <img
+          className="absolute w-full h-full left-0 object-cover object-center opacity-60"
+          src="/images/roadmapShape.png"
+        ></img>
+        <section className="relative py-10  overflow-hidden">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white mb-8 md:mb-12 tracking-widest">
             CYBOX TIMELINE
           </h2>

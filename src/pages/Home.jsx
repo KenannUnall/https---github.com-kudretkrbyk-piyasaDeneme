@@ -235,8 +235,7 @@ const Home = () => {
       <RoadMapOne />
       <Team data={teamData} />
 
-      <FAQ data={faqData} />
-      <Partner data={partnerData} />
+      <FAQ />
     </div>
   );
 };

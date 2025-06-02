@@ -41,12 +41,20 @@ const CoinsSlider = () => {
   ];
 
   return (
-    <div className="relative w-full py-8 overflow-hidden">
-      {/* Gradient arka plan */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0c1226] via-[#141A31] to-[#0c1226] pointer-events-none z-0" />
+    <div className="relative w-full py-8 min-h-3400px]">
+      {/* Arka plan görseli */}
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src="/images/sliderShape.png"
+          alt="Coins Background"
+          className="absolute w-full h-full object-cover object-center opacity-30"
+        />
+      </div>
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0c1226] via-[#141A31] to-[#0c1226] pointer-events-none opacity-45" />
 
       {/* Slider container */}
-      <div className="relative container mx-auto px-4 z-10">
+      <div className="relative container mx-auto px-4">
         <Swiper
           modules={[Autoplay, Navigation]}
           spaceBetween={40}
@@ -73,15 +81,15 @@ const CoinsSlider = () => {
               key={coin.id}
               className="flex items-center justify-center w-full"
             >
-              <div className="relative w-64 group h-full hover:shadow-[0_0_32px_#14C2A3] hover:shadow-neon-glow transition-all duration-700  p-1">
+              <div className="relative w-64 group h-full hover:shadow-[0_0_32px_#14C2A3] hover:shadow-neon-glow transition-all duration-700 p-1">
                 {/* Köşe çizgileri */}
-                <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full " />
-                <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full " />
-                <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full " />
-                <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full " />
+                <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full" />
+                <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full" />
+                <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full" />
+                <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-[#14C2A3] transition-all duration-700 group-hover:w-full group-hover:h-full" />
 
                 {/* İçerik kutusu */}
-                <div className="relative z-20 p-6  bg-white/5 backdrop-blur-sm">
+                <div className="relative z-20 p-6 bg-white/5 backdrop-blur-sm">
                   {/* Üst kısım - Logo ve İsim */}
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 rounded-full bg-[#14C2A3]/10 flex items-center justify-center">
@@ -119,12 +127,12 @@ const CoinsSlider = () => {
                 </div>
               </div>
             </SwiperSlide>
-          ))}{" "}
+          ))}
         </Swiper>
 
         {/* Navigation butonları */}
-        <div className="swiper-button-prev !w-12 !h-12 hidden sm:flex  !bg-[#14C2A3] !rounded-full !text-white after:!text-xl after:!content-['←'] !left-4" />
-        <div className="swiper-button-next !w-12 !h-12 hidden sm:flex  !bg-[#14C2A3] !rounded-full !text-white after:!text-xl after:!content-['→'] !right-4" />
+        <div className="swiper-button-prev !w-12 !h-12 hidden sm:flex !bg-[#14C2A3] !rounded-full !text-white after:!text-xl after:!content-['←'] !left-4" />
+        <div className="swiper-button-next !w-12 !h-12 hidden sm:flex !bg-[#14C2A3] !rounded-full !text-white after:!text-xl after:!content-['→'] !right-4" />
       </div>
     </div>
   );
