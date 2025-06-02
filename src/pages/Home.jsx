@@ -231,7 +231,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-[#0c1226]">
       <Hero />
-      <CoinsSlider data={projectData} />
+      <CoinsSlider />
       <RoadMapOne />
       <Team data={teamData} />
 

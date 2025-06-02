@@ -38,6 +38,14 @@ const CoinsSlider = () => {
       change: "+3.45%",
       image: "/images/cardano.png",
     },
+    {
+      id: 4,
+      name: "Carsdsddano",
+      symbol: "ADA",
+      price: "$1.23",
+      change: "+3.45%",
+      image: "/images/cardano.png",
+    },
   ];
 
   return (
