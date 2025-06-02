@@ -54,7 +54,7 @@ const CoinsSlider = () => {
           loop={true}
           breakpoints={{
             640: { slidesPerView: 1 },
-            768: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
             1280: { slidesPerView: 4 },
           }}
@@ -123,8 +123,8 @@ const CoinsSlider = () => {
         </Swiper>
 
         {/* Navigation butonları */}
-        <div className="swiper-button-prev !w-12 !h-12 hidden md:flex  !bg-[#14C2A3] !rounded-full !text-white after:!text-xl after:!content-['←'] !left-4" />
-        <div className="swiper-button-next !w-12 !h-12 hidden md:flex  !bg-[#14C2A3] !rounded-full !text-white after:!text-xl after:!content-['→'] !right-4" />
+        <div className="swiper-button-prev !w-12 !h-12 hidden sm:flex  !bg-[#14C2A3] !rounded-full !text-white after:!text-xl after:!content-['←'] !left-4" />
+        <div className="swiper-button-next !w-12 !h-12 hidden sm:flex  !bg-[#14C2A3] !rounded-full !text-white after:!text-xl after:!content-['→'] !right-4" />
       </div>
     </div>
   );

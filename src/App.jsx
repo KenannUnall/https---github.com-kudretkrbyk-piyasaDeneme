@@ -21,18 +21,22 @@ function App() {
       <div className="min-h-screen bg-[#141A31]">
         <WarningModal />
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+        <div className="pt-[100px] lg:pt-[90px]">
+          {" "}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
 
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/roadmap" element={<RoadMapOne />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/partner" element={<Partner />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/*" element={<Page404 />} />
-        </Routes>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/roadmap" element={<RoadMapOne />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/partner" element={<Partner />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/*" element={<Page404 />} />
+          </Routes>
+        </div>
+
         <Footer />
       </div>
     </Router>
