@@ -1,15 +1,15 @@
 import React from "react";
 import PageTitle from "../components/pagetitle/PageTitle";
-
+import Button from "../components/button";
 const Contact = () => {
   return (
-    <div className="font-chakra">
-      <PageTitle title="İletişim" />
+    <div className="font-chakra min-h-screen w-full overflow-hidden relative md:p-12 p-2 ">
+      {/* <PageTitle title="İletişim" /> */}
       <img
-        className="absolute w-full left-0 right-0 top-1/3 "
-        src="/images/team_bg.png"
+        className="absolute w-full h-full left-0 right-0 bottom-0 object-cover object-center opacity-40"
+        src="/images/contactShape.png"
       ></img>
-      <section className="py-20 bg-[#0c1226] text-white font-chakra">
+      <section className="  text-white font-chakra">
         <div className="container mx-auto px-4">
           <div className="flex flex-col xl:flex-row gap-12">
             {/* Contact Form */}
@@ -62,13 +62,7 @@ const Contact = () => {
                   placeholder="Type your Message"
                   className="w-full p-3 rounded bg-transparent border border-white/20 text-white placeholder:text-gray-400 focus:outline-none focus:border-[#14C2A3]"
                 ></textarea>
-                <button
-                  type="submit"
-                  className="relative group overflow-hidden inline-block px-8 py-3 font-semibold uppercase border border-[#14C2A3] text-white hover:bg-[#14C2A3] transition"
-                >
-                  <span className="relative z-10">Send Message</span>
-                  <span className="absolute inset-0 bg-[#14C2A3] opacity-0 group-hover:opacity-100 transition"></span>
-                </button>
+                <Button title={"send Message"} type="submit"></Button>
               </form>
             </div>
 
@@ -95,7 +89,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="w-full h-[430px] rounded overflow-hidden shadow-lg">
+                {/* <div className="w-full h-[430px] rounded overflow-hidden shadow-lg">
                   <iframe
                     title="map"
                     className="w-full h-full"
@@ -103,7 +97,7 @@ const Contact = () => {
                     allowFullScreen=""
                     loading="lazy"
                   ></iframe>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

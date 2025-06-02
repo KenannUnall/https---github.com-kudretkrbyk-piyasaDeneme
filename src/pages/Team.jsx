@@ -36,19 +36,19 @@ const Team = () => {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="bg-[#0c1226] min-h-screen w-full text-white font-chakra relative overflow-visible">
-      <section className="relative py-10 text-center bg-[#141A31] group">
-        <h1 className="text-5xl md:text-6xl font-bold  tracking-wider text-white">
+    <div className="bg-[#0c1226] min-h-screen w-full border border-white text-white font-chakra relative overflow-visible py-5">
+      {/* <section className="relative py-10 text-center bg-[#141A31] group">
+        {/* <h1 className="text-5xl md:text-6xl font-bold  tracking-wider text-white">
           Ekibimiz
-        </h1>
-        <div className=" w-24 h-1 group-hover:w-48 duration-500 bg-[#14C2A3] mx-auto"></div>
-      </section>{" "}
-      <section className="relative  pt-10 bg-[#0f1928]">
+        </h1> 
+      </section> */}
+      <section className="relative   bg-[#0f1928]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 group">
             <h5 className="text-[#14C2A3] uppercase font-bold font-chakra tracking-wide mb-2">
               Our Team
             </h5>
+            <div className=" w-20 h-1 group-hover:w-48 duration-500 bg-[#14C2A3] mx-auto"></div>
             <h2 className="text-white text-3xl md:text-4xl font-bold font-chakra">
               Meet our skilled team
             </h2>

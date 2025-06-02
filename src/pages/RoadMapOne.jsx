@@ -40,17 +40,20 @@ function RoadMapOne() {
     },
   ];
   return (
-    <div className="bg-[#0c1226] min-h-screen w-full text-white font-chakra relative overflow-hidden ">
+    <div className="bg-[#0c1226] min-h-screen w-full text-white font-chakra relative overflow-hidden py-5 ">
       {/* Page Title Section */}
-      <PageTitle title="Yol Haritası" />
+      {/* <PageTitle title="Yol Haritası" /> */}
 
       {/* Roadmap Section */}
-      <section className="py-10 px-4 max-w-7xl mx-auto">
+      <section className=" px-4 max-w-7xl mx-auto">
         <img
           className="absolute w-full h-full left-0 object-cover object-center opacity-60"
           src="/images/roadmapShape.png"
         ></img>
-        <section className="relative py-10  overflow-hidden">
+        <section className="relative   overflow-hidden">
+          <p className="text-[#14C2A3] font-bold font-chakra uppercase tracking-wider text-center">
+            Roadmap
+          </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white mb-8 md:mb-12 tracking-widest">
             CYBOX TIMELINE
           </h2>

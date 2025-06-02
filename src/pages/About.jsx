@@ -35,14 +35,14 @@ function AboutPage() {
   ];
 
   return (
-    <div className=" relative">
-      <PageTitle title="Hakkımızda" />
+    <div className=" relative min-h-screen w-full overflow-hidden py-10 md:py-5">
+      {/* <PageTitle title="Hakkımızda" /> */}
       <img
-        className="absolute w-full left-0 right-0 top-1/3 "
+        className="absolute w-full h-full left-0 right-0 top-10 object-cover object-center opacity-60"
         src="/images/team_bg.png"
       ></img>
 
-      <section className="py-20 bg-[#141A31] font-chakra">
+      <section className=" w-full bg-[#141A31] font-chakra ">
         <div className="container mx-auto px-4 font-chakra">
           <div className="flex flex-col  gap-12 items-center justify-center w-full">
             <div className="lg:w-1/3  ">
