@@ -62,7 +62,7 @@ const Header = () => {
       <img className="absolute w-full h-24" src="/images/bg.png"></img>
       <div className="container mx-auto px-4 h-full flex items-center relative justify-between">
         {/* Logo */}
-        <div className="flex-shrink-0 transform transition-transform duration-300 hover:scale-105">
+        <div className="flex transform transition-transform duration-300 hover:scale-105">
           <NavLink to="/">
             <img src={logo} alt="Crybox" className="h-10" />
           </NavLink>
@@ -70,7 +70,7 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <nav className={`hidden lg:block`}>
-          <ul className="flex items-center gap-8">
+          <ul className="w-full flex items-center justify-around gap-8">
             {menus.map((data, idx) => (
               <li
                 key={idx}
