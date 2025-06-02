@@ -38,14 +38,6 @@ const CoinsSlider = () => {
       change: "+3.45%",
       image: "/images/cardano.png",
     },
-    {
-      id: 4,
-      name: "Carsdsddano",
-      symbol: "ADA",
-      price: "$1.23",
-      change: "+3.45%",
-      image: "/images/cardano.png",
-    },
   ];
 
   return (
@@ -64,7 +56,7 @@ const CoinsSlider = () => {
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
-            1280: { slidesPerView: 4 },
+            1280: { slidesPerView: 3 },
           }}
           autoplay={{
             delay: 3000,
