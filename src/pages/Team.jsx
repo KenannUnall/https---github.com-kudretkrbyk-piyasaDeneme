@@ -46,7 +46,7 @@ const Team = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 group">
             <h5 className="text-[#14C2A3] uppercase font-bold font-chakra tracking-wide mb-2">
-              Our Team
+              Our Teams
             </h5>
             <div className=" w-20 h-1 group-hover:w-48 duration-500 bg-[#14C2A3] mx-auto"></div>
             <h2 className="text-white text-3xl md:text-4xl font-bold font-chakra">
