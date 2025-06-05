@@ -9,10 +9,9 @@ import CoinDetailPage from "./pages/CoinDetailPage";
 import Contact from "./pages/contact";
 import Team from "./pages/Team";
 
-import Project from "./pages/project";
 import Partner from "./pages/Partner";
 import FAQ from "./pages/FAQ";
-import Page404 from "./pages/404";
+import Page404 from "./pages/Page404";
 import RoadMapOne from "./pages/RoadMapOne";
 import WarningModal from "./components/WarningModal";
 import MouseFollower from "./components/MouseFollower";
@@ -33,7 +32,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/team" element={<Team />} />
             <Route path="/roadmap" element={<RoadMapOne />} />
-            <Route path="/project" element={<Project />} />
+            {/* <Route path="/project" element={<Project />} /> */}
             <Route path="/partner" element={<Partner />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/coin/:id" element={<CoinDetailPage />} />
