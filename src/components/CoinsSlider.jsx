@@ -1,10 +1,11 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const CoinsSlider = () => {
+export default function CoinsSlider() {
+  const navigate = useNavigate();
   const coins = [
     {
       id: 1,
@@ -23,7 +24,7 @@ const CoinsSlider = () => {
       image: "/images/ethereum.png",
     },
     {
-      id: 3,
+      id: 4,
       name: "Binance Coin",
       symbol: "BNB",
       price: "$567.89",
@@ -31,7 +32,7 @@ const CoinsSlider = () => {
       image: "/images/binance.png",
     },
     {
-      id: 4,
+      id: 3,
       name: "Cardano",
       symbol: "ADA",
       price: "$1.23",
@@ -79,7 +80,8 @@ const CoinsSlider = () => {
           {coins.map((coin) => (
             <SwiperSlide
               key={coin.id}
-              className="flex items-center justify-center w-full"
+              className="flex items-center justify-center w-full hover:cursor-pointer"
+              onClick={() => navigate(`/coin/${coin.id}`)}
             >
               <div className="relative w-64 group h-full hover:shadow-[0_0_32px_#14C2A3] hover:shadow-neon-glow transition-all duration-700 p-1">
                 {/* Köşe çizgileri */}
@@ -136,6 +138,4 @@ const CoinsSlider = () => {
       </div>
     </div>
   );
-};
-
-export default CoinsSlider;
+}

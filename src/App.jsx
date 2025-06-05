@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import CoinDetailPage from "./pages/CoinDetailPage";
 
 import Contact from "./pages/contact";
 import Team from "./pages/Team";
@@ -35,6 +36,7 @@ function App() {
             <Route path="/project" element={<Project />} />
             <Route path="/partner" element={<Partner />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/coin/:id" element={<CoinDetailPage />} />
             <Route path="/*" element={<Page404 />} />
           </Routes>
         </div>
