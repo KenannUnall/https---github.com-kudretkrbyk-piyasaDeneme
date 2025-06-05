@@ -154,9 +154,7 @@ const CoinDetailPage = () => {
         <div className="w-full bg-[#141A31] rounded-xl shadow-lg p-6">
           <div className="flex item-start justify-between">
             {" "}
-            <h2 className="text-xl font-bold text-white mb-4">
-              Candlestick Grafik
-            </h2>
+            <h2 className="text-xl font-bold text-white mb-4">Grafik</h2>
             <div className=" ">
               <label className="block text-gray-300 mb-2 font-bold">
                 Zaman Dilimi
