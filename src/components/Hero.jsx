@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./button";
 
-const Hero = () => {
+export default function Hero({ scrollToCoins }) {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[#0c1226] p-5 md:p-20 font-chakra">
       {/* Arka plan animasyonlu gradient */}
@@ -28,12 +28,12 @@ const Hero = () => {
               analizlerle yatırım kararlarınızı güçlendirin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button title="Tahminleri Gör" path="/predictions" />
+              <Button onClick={scrollToCoins} title="Tahminleri Gör" />
               <Link
                 to="/contact"
                 className="px-8 py-3 text-white border-2 border-[#14C2A3] rounded-md hover:bg-[#14C2A3] hover:text-white transition-all duration-300 text-center"
               >
-                Ücretsiz Dene
+                Ücretsiz Dene????
               </Link>
             </div>
           </div>
@@ -88,6 +88,4 @@ const Hero = () => {
       </div>
     </div>
   );
-};
-
-export default Hero;
+}

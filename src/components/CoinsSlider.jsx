@@ -42,7 +42,7 @@ export default function CoinsSlider() {
   ];
 
   return (
-    <div className="relative w-full py-8 min-h-3400px]">
+    <div id="coins-section" className="relative w-full py-8 min-h-3400px]">
       {/* Arka plan görseli */}
       <div className="absolute inset-0 w-full h-full">
         <img
