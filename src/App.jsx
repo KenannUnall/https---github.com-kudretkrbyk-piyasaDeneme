@@ -14,12 +14,14 @@ import FAQ from "./pages/FAQ";
 import Page404 from "./pages/404";
 import RoadMapOne from "./pages/RoadMapOne";
 import WarningModal from "./components/WarningModal";
+import MouseFollower from "./components/MouseFollower";
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-[#141A31]">
         <WarningModal />
+        <MouseFollower />
         <Header />
         <div className="pt-[90px] flex-grow ">
           {" "}
